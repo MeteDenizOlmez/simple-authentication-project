@@ -11,7 +11,7 @@
 # Here is an image showcasing some of the plans and my thought process of how things could work before starting this project
 ![image](https://github.com/user-attachments/assets/e196148a-b942-471f-a4f4-a5819048f7c3)
 
-#This is a WIP (Work In Progress) preview of what has been done so far:
+# This is a WIP (Work In Progress) preview of what has been done so far:
 Video:
 
 1) Client-side JS code makes a POST request to the server-side Python code with the appropriate username and password entered
