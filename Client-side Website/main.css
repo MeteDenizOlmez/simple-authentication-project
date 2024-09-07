@@ -1,0 +1,148 @@
+/* DEFAULT COLORS */
+:root{
+  --accent-bgcolor: rgba(19, 129, 253, 0.4);
+  --accent-color: rgb(19, 129, 253);
+  --accent-hovercolor: rgb(17, 112, 221);
+  --accent-interactcolor: rgba(19, 128, 253, 0.699);
+  --selection-bgcolor: rgb(255,255,255);
+  --selection-color: rgb(0,0,0);
+}
+
+
+
+
+::-moz-selection { /* for firefox */
+    color: var(--selection-color);
+    background: var(--selection-bgcolor);
+  }
+  
+::selection {
+    color: var(--selection-color);
+    background: var(--selection-bgcolor);
+  }
+
+#background{
+  width: auto;
+  height: 75px;
+  background-color: black;
+  
+}
+
+#navbar {
+    background-color: rgba(253, 253, 253, 0.062);
+    border-radius: 90px;
+    border-color: rgba(253, 253, 253, 0.151);
+    border-width: 1px;
+    border-style: solid;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: auto;
+    user-select: none;
+}
+
+.navbar_buttons{
+  padding: 0;
+  font-family: Inter, sans serif;
+  font-size: 18px;
+  color: white;
+  width: auto;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 90px;
+  border-style: none;
+  cursor:pointer;
+  transition: 0.05s;
+  padding-left: 15px;
+  padding-right: 15px;  
+  margin-left: 3px;
+  margin-right: 3px;
+  
+}
+
+.navbar_buttons:disabled{
+  background-color: rgba(253, 253, 253, 0.062);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);  
+}
+
+.navbar_buttons:hover{
+  background-color: rgba(253, 253, 253, 0.062);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px); 
+  transition: 0.05s;
+}
+
+@keyframes bg_animation{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+.textfield{
+  text-align: center;
+  padding-inline: 3px;
+  height: 40px;
+  width: 400px;
+  font-family: Inter, sans serif;
+  font-weight:400;
+  font-size: 22px;
+  border-radius: 10px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: rgba(253, 253, 253, 0.151);
+  background-color: rgba(253, 253, 253, 0.062);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px); 
+  color: white;
+  transition: 0.2s;
+}
+
+.textfield:focus{
+  transition: 0.2s;
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+.button{
+  text-align: center;
+  height: 50px;
+  width: 406px;
+  font-family: Inter, sans serif;
+  font-weight:400;
+  font-size: 22px;
+  border-radius: 10px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: rgba(253, 253, 253, 0.151);
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover{
+  outline: none;
+  border-color: var(--accent-hovercolor);
+  box-shadow: 0 0 10px var(--accent-hovercolor);
+  background-color: var(--accent-hovercolor);
+  transition: 0.2s;
+}
+
+.button:active{
+  outline: none;
+  border-color: var(--accent-interactcolor);
+  box-shadow: 0 0 10px var(--accent-interactcolor);
+  background-color: var(--accent-interactcolor);
+  transition: 0.2s;
+}
+
+#loginbutton{
+  background-image: url(icons/lock-white.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
