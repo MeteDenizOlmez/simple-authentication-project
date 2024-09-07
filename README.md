@@ -5,6 +5,7 @@
 
 # Improvements (other than the obvious ones)
 * Most importantly in the future this could be improved by adding some sort of encryption and hashing system to ensure cruical data such as PASSWORDS or TOKENS are not stored as plain text but instead are encrypted and hashed, like in the real world (This project is overall simplified in some areas regarding database security)
+* Since I do not own an SSL certificate nor a Domain at this moment in time, I can't test the usage of the REST API that I created over HTTPS so this could be a vulnerability since data is not encrypted as it travels from client to server
 
 # Here is an image showcasing some of the plans and my thought process of how things could work before starting this project
 ![image](https://github.com/user-attachments/assets/e196148a-b942-471f-a4f4-a5819048f7c3)
