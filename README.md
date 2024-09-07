@@ -17,5 +17,5 @@ Video:
 1) Client-side JS code makes a POST request to the server-side Python code with the appropriate username and password entered
 2) Server-side python program then compares this to values found in the database to ensure they match, and if so, a result of valid is returned to the JS Client through the API and the python program also proceeds to send an e-mail confirming the login attempt
 3) If credentials not found, an invalid result is returned to the JS client and a message is displayed
------Future:-------
+In the Future:
    - Continue by adding a code to the email that is sent to get the client to verify the code by typing it out and comparing them to ensure they are who they say they are...
